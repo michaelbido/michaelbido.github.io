@@ -1,0 +1,10 @@
+@mixin heading-font {
+  font-family: 'Source Sans Pro', Arial, Helvetica, sans-serif;
+}
+
+@mixin bodytext-font {
+  font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+}
+
+$green: #1a5b17;
+

@@ -1,0 +1,28 @@
+body {
+  @include bodytext-font;
+  margin: 0 0 16px 0;
+  padding: 0;
+
+  .content {
+    padding: 16px;
+  }
+}
+
+
+@media (min-width: 900px) {
+  body {
+    padding-top: 0;
+    margin: 32px 16px 16px 232px;
+
+    .content {
+      padding: 16px;
+    }
+  }
+
+  h1, h2 {
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 0;
+    margin: 0;
+  }
+}
