@@ -12,6 +12,12 @@ const contactInfo = `
 `;
 
 //notes for font-awesome icons in each section...
+//ABOUT
+//github-square
+//linkedin
+//dev
+//link
+
 
 //EDUCATION
 //graduation-cap
@@ -40,3 +46,4 @@ $(document).ready(function() {
   console.log($sections);
 })
 
+// typing text at start screen, WIP

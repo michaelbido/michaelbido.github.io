@@ -7,7 +7,28 @@
   }
 }
 
+@media (max-width: 410px) {
+  #contact-info {
+    font-size: 1.17em;
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+}
+
+#education {
+  background-image: url(../img/UNT-Eagle.svg);
+  background-repeat: no-repeat;
+  background-position: center; 
+  background-size: 75% 75%;
+}
+
+.end-of-page {
+  text-align: center;
+}
+
 section {
+  min-height: 70vh;
+
   padding-top: 24px;
   padding-bottom: 24px;
   border-bottom: $green solid 2px;
@@ -15,16 +36,22 @@ section {
   flex-direction: column;
   justify-content: center;
 
+  h1 {
+    border-left: $green solid 6px;
+    padding-left: 16px;
+    margin-top: 24px;
+  }
+
   #name {
     font-size: 3.5em;
     padding-left: 24;
   }
 
-  
-  h1 {
-    border-left: $green solid 6px;
-    padding-left: 16px;
-    margin-top: 24px;
+  .subsection {
+
+    .subsection-item {
+      margin-bottom: 32px;
+    }
   }
 }
 
