@@ -8,9 +8,12 @@
 }
 
 section {
-  margin-top: 24px;
-  margin-bottom: 24px;
-  border-bottom: $black solid 1px;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  border-bottom: $green solid 2px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 
   #name {
     font-size: 3.5em;

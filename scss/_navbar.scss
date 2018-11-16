@@ -20,7 +20,7 @@
   #image-link:hover {
     border-bottom: transparent solid 1px;
     img {
-      border: $white solid 4px;
+      border: $green solid 4px;
     }
   }
 
@@ -69,7 +69,7 @@
       text-align: center;
       border: none;
       img {
-        border: $darkpalegreen solid 4px;
+        border: $superwhite solid 4px;
         border-radius: 50%;
         max-width: 160px;
         height: auto;
@@ -84,7 +84,7 @@
         flex-direction: column;
         justify-content: center;
         li {
-          padding: 8px 0 8px 0;
+          padding: 10px 0 10px 0;
         }
       }
     }
@@ -98,7 +98,8 @@ footer {
   background-color: $black;
   color: $grey;
   margin: 0;
-  padding-top: 16px;
+  padding-top: 32px;
+  padding-bottom: 16px;
   p {
     font-size: 0.8em;
     margin: 0;

@@ -11,21 +11,27 @@ const contactInfo = `
     <div class="contact-entry">${city}</div>
 `;
 
+//notes for font-awesome icons in each section...
 
-// const contactInfo = `
-//   <div class="contact-item">
-//     <div>Phone</div>
-//     <div>${number}</div>
-//   </div>
-//   <div class="contact-item">
-//     <div>Email</div>
-//     <div>${email}</div>
-//   </div>
-//   <div class="contact-item">
-//     <div>Location</div>
-//     <div>Dallas, Texas</div>
-//   </div>
-// `;
+//EDUCATION
+//graduation-cap
+
+//EXPR & PROJECTS
+//user-tie
+//user-graduate
+//user-ninja
+
+//SKILL SET
+//code
+//terminal
+//laptop-code
+//chart-line
+
+//AWARDS
+//award
+//file-contract
+
+// navbar highlighting based on page position, WIP
 $(document).ready(function() {
   $("#contact-info").html(contactInfo);
   $("#footer-contact").html(contactInfo);
