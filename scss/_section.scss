@@ -1,0 +1,27 @@
+section {
+  padding: 0;
+  margin-top: 24px;
+  margin-bottom: 24px;
+  border-bottom: $black solid 1px;
+
+  #name {
+    font-size: 3.5em;
+    padding-left: 24;
+  }
+}
+
+@media (min-width: 900px) {
+  section {
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+
+    h1 {
+      border-left: $green solid 6px;
+      border-bottom-right-radius:10px;
+      border-bottom-right-radius:10px;
+      padding-left: 16px;
+      margin-top: 24px;
+    }
+  }
+}

@@ -10,7 +10,6 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/fontawesome.css" integrity="sha384-u5J7JghGz0qUrmEsWzBQkfvc8nK3fUT7DCaQzNQ+q4oEXhGSx+P2OqjWsfIRB8QT" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <script src="js/main.js"></script>
-    <script src='https://www.google.com/recaptcha/api.js'></script>
     <title>Michael Bido - whoami</title>
   </head>
   <body id="top-of-page">
@@ -33,11 +32,10 @@
     <div class="content">
       <section id="about">
         <div>
-          <h1>Michael Bido</h1>
+          <h1 id="name">Michael Bido</h1>
           <h2 id="contact-info"></h2>
           <h3>Aspiring software engineer seeking to create great things. Always learning.</h3>
         </div>
-        <hr />
       </section>
       <section id="education">
         <div><h1>Education</h1></div>
@@ -45,100 +43,110 @@
         <div><h2>University of North Texas — Denton, TX</h2></div>
         <div><h3>Graduated May 2018 – Cum Laude</h3></div>
         <div><h3>GPA 3.54</h3></div>
-        <hr />
       </section>
       <section id="experience">
-        <div><h1>Experience & Projects</h1></div>
-        <div>
-          <h2>Work</h2>
-          <h3>Seer Media</h3>
-          <h3>Content Manager, Social Media Manager</h3>
-          <h4>Jan. 2015 – Present</h4>
-          <p>Used Wordpress to integrate services and manage content for Seer Media’s websites and their clients. Published content from Seer Media to social media platforms such as Facebook and Twitter. Analyzed website feedback/statistics from Google Analytics and Facebook Insights for internal auditing and reporting.</p>
+        <div class="section-title"><h1>Experience & Projects</h1></div>
+        <div class="subsection">
+          <h2 class="subsection-title">Work</h2>
+          <div class="subsection-item">
+            <h3>Seer Media</h3>
+            <h3>Content Manager, Social Media Manager</h3>
+            <h4>Jan. 2015 – Present</h4>
+            <p>Used Wordpress to integrate services and manage content for Seer Media’s websites and their clients. Published content from Seer Media to social media platforms such as Facebook and Twitter. Analyzed website feedback/statistics from Google Analytics and Facebook Insights for internal auditing and reporting.</p>
+          </div>
         </div>
-        <div>
-          <h2>Academic Projects</h2>
-          <div>
+        <div class="subsection">
+          <h2 class="subsection-title">Academic Projects</h2>
+          <div class="subsection-item">
             <h3>Bloom Healthcare Record System</h3>
             <h4>Made with React.js, Firebase and Semantic UI</h4>
             <p>A web-app designed to provide patients and medical staff access to relevant patient records from multiple healthcare organizations. This includes allowing patients to create a profile, and keeping track of their medical history while allowing doctors to examine information of a patient over time.</p>
           </div>
-          <div>
+          <div class="subsection-item">
             <h3>Restaurant Point-of-Sale System on iOS</h3>
             <h4>Made in Xcode with Swift and Firebase</h4>
             <p>A restaurant point-of-sale system that integrates three different iOS apps for customers,  wait staff, and chefs. All three apps would inter-connect using Google Firebase, and would enable customers to place orders and help restaurant staff to fulfill those orders.</p>
           </div>
-          <div>
+          <div class="subsection-item">
             <h3>Two Factor Auth. (Password and Face Recognition) Webpage w/ OpenCV</h3>
             <h4>Made with Node.js, OpenCV and HTML/CSS/JS</h4>
             <p>A Node.js project that utilizes the OpenCV library for facial detection and recognition in order to authenticate a user to a service. When a user attempts to log in using a username and password, the user is prompted to authenticate with facial recognition via a webcam snapshot.</p>
           </div>
-          <div>
+          <div class="subsection-item">
             <h3>Object Oriented Programming (OOP) Learning Module</h3>
             <h4>Made with React.js</h4>
             <p>A learning module made for UNT students to teach the basic concepts of OOP with Java. The module is broken into six parts: Introduction, Inheritance, Polymorphism, Abstraction, Encapsulation and Quizzes.</p>
           </div>
         </div>
-        <div>
-          <h2>Non-Academic Projects</h2>
-          <div>
+        <div class="subsection">
+          <h2 class="subsection-title">Non-Academic Projects</h2>
+          <div class="subsection-item">
             <h3>UNT Focus Group Assistant Tool</h3>
             <h4>Made with React.js and Firebase</h4>
             <p>An online tool that streamlines the check-in process for Supplemental Instructor (SI) Leaders during their bi-weekly focus group meetings. Normally, focus group info is collected via paper forms. This also provides analytics for and SI leaders, including student attendance over SI effort graphs.</p>
           </div>
-          <div>
+          <div class="subsection-item">
             <h3>Color Picking Challenge in Android Studio</h3>
             <h4>Made in Android Studio with Java and XML</h4>
             <p>A fun brain teaser where players have to select the correct color button as a random string displayed is the target color, but the color of the text is also random. Users have 20 seconds to play for a high score.</p>
           </div>
-          <div>
+          <div class="subsection-item">
             <h3>Disaster Relief Project Asyt.me</h3>
             <h4>Made with jQuery, Google Maps API and Firebase</h4>
             <p>An ambitious proof-of-concept designed to be a platform for crowd-sourced disaster relief – allows people to be notified when a person in need of rescuing broadcasts that they need help. </p>
           </div>
         </div>
-        <hr />
       </section>
       <section id="skillset">
-        <div><h1>Skill Set</h1></div>
-        <div><h2>Programming Languages</h2></div>
-        <div>
-          <h4>C / C++</h4>
-          <h4>Java</h4>
-          <h4>HTML / CSS</h4>
-          <h4>Javascript</h4>
-          <h4>JSON / XML</h4>
-          <h4>Swift</h4>
-          <h4>Python</h4>
-          <h4>Bash</h4>
-          <h4>mySQL</h4>
+        <div class="section-title"><h1>Skill Set</h1></div>
+        <div class="subsection">
+          <h2 class="subsection-title">Programming Languages</h2>
+          <div class="subsection-item">
+
+            <h4>C / C++</h4>
+            <h4>Java</h4>
+            <h4>HTML / CSS</h4>
+            <h4>Javascript</h4>
+            <h4>JSON / XML</h4>
+            <h4>Swift</h4>
+            <h4>Python</h4>
+            <h4>Bash</h4>
+            <h4>mySQL</h4>
+          </div>
         </div>
-        <div><h2>Platforms / Software</h2></div>
-        <div>
-          <h4>Git / GitHub</h4>
-          <h4>Node.js</h4>
-          <h4>Xcode</h4>
-          <h4>Android Studio</h4>
-          <h4>Google Firebase</h4>
-          <h4>Wordpress</h4>
-          <h4>Adobe CS6</h4>
+        <div class="subsection">
+          <h2 class="subsection-title">Platforms / Software</h2>
+          <div class="subsection-item">
+            <h4>Git / GitHub</h4>
+            <h4>Node.js</h4>
+            <h4>Xcode</h4>
+            <h4>Android Studio</h4>
+            <h4>Google Firebase</h4>
+            <h4>Wordpress</h4>
+            <h4>Adobe CS6</h4>
+          </div>
         </div>
-        <div><h2>Operating Systems</h2></div>
-        <div>
-          <h4>Mac OS X / macOS</h4>
-          <h4>Ubuntu / Linux</h4>
-          <h4>Windows 7 / 10</h4>
+        <div class="subsection">
+          <h2 class="subsection-title">Operating Systems</h2>
+          <div class="subsection-item">
+            <h4>Mac OS X / macOS</h4>
+            <h4>Ubuntu / Linux</h4>
+            <h4>Windows 7 / 10</h4>
+          </div>
         </div>
-        <div><h2>Workflow</h2></div>
-        <div><h4>Agile methodology and Scrum</h4></div>
-        <div><h4>Gathering user requirements</h4></div>
-        <div><h4>Developling prioritized requirements</h4></div>
-        <div><h4>Validating requirements based on output</h4></div>
-        <hr />
+        <div class="subsection">
+          <h2 class="subsection-title">Productivity</h2>
+          <div class="subsection-item">
+            <h4>Agile methodology and Scrum</h4>
+            <h4>Gathering user requirements</h4>
+            <h4>Developling prioritized requirements</h4>
+            <h4>Validating requirements based on output</h4>
+          </div>
+        </div>
       </section>
       <section id="awards">
         <div><h1>Awards and Certifcations</h1></div>
-        <div><h2>Awards</h2></div>
+        <div class="subsection"><h2>Awards</h2></div>
         <div>
           <h3>Best Disaster Relief Project - HackUTA 2017</h3>
           <h4>Awarded for the Asyt.me project</h4>
@@ -147,7 +155,7 @@
           <h3>2nd Best Overall Hack - HackUNT 2018</h3>
           <h4>Awarded for the UNT Focus Group Assistant Tool project</h4>
         </div>
-        <div><h2>Certifications</h2></div>
+        <div class="subsection"><h2>Certifications</h2></div>
         <div>
           <h3>Technical Writing Certificate</h3>
           <h4>Earned through the TECM Department at UNT, from the the Department of Technical Communication.</h4>
@@ -156,11 +164,10 @@
           <h3>Security Certificate</h3>
           <h4>Earned through the CSCE Department at UNT, following the standards from the Committee on National Security Systems (CNSS).</h4>
         </div>
-        <hr />
       </section>
       <section id="organizations">
         <div><h1>Organizations and Volunteer Work</h1></div>
-        <div><h2>Organizations</h2></div>
+        <div class="subsection"><h2>Organizations</h2></div>
         <div>
           <h3>UNT Engineering Orgs</h3>
           <h4>Member</h4>
@@ -181,7 +188,7 @@
           <h4>Member</h4>
           <p>Nov. 2016 - Dec. 2017</p>
         </div>
-        <div><h2>Volunteer Work</h2></div>
+        <div class="subsection"><h2>Volunteer Work</h2></div>
         <div>
           <div>
             <h3>UNT - The Big Event</h3>

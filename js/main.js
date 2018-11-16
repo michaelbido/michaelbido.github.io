@@ -5,4 +5,8 @@ const contactInfo = `<span>Dallas, Texas</span> | Phone <span>${number}</span> |
 
 $(document).ready(function() {
   $("#contact-info").html(contactInfo);
+
+  var $sections = $('section');
+  console.log($sections);
 })
+
