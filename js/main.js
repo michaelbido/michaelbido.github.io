@@ -11,39 +11,31 @@ const contactInfo = `
     <div class="contact-entry">${city}</div>
 `;
 
-//notes for font-awesome icons in each section...
-//ABOUT
-//github-square
-//linkedin
-//dev
-//link
 
 
-//EDUCATION
-//graduation-cap
 
-//EXPR & PROJECTS
-//user-tie
-//user-graduate
-//user-ninja
-
-//SKILL SET
-//code
-//terminal
-//laptop-code
-//chart-line
-
-//AWARDS
-//award
-//file-contract
-
-// navbar highlighting based on page position, WIP
 $(document).ready(function() {
+  // populate contact info fields
   $("#contact-info").html(contactInfo);
   $("#footer-contact").html(contactInfo);
 
+  // mobile menu navbar
+  $("#menu").click(function() {
+    $(".menu-container").css({"width": "100vw"});
+  });
+
+  $("#close-button").click(function() {
+    $(".menu-container").css({"width": "0"});
+  });
+
+  $(".menu-content ul li").click(function() {
+    $(".menu-container").css({"width": "0"});
+  });
+
+  // navbar highlighting based on page position, WIP
   var $sections = $('section');
-  console.log($sections);
+  //console.log($sections);
+
+  // typing text at start screen, WIP
 })
 
-// typing text at start screen, WIP

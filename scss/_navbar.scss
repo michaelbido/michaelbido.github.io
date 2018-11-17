@@ -4,6 +4,22 @@
   text-transform: uppercase;
   font-weight: bold;
   letter-spacing: 2px;
+  background-color: $black;
+  text-align: center;
+
+  ul {
+    height: 100%;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    li {
+      padding: 10px 0 10px 0;
+    }
+  }
+
   a {
     text-decoration: none;
     border-bottom: transparent solid 1px;
@@ -29,29 +45,58 @@
     
   }
 
+  .menu-container {
+    height: 100vh;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: $black;
+    color: $superwhite;
+    overflow-x: hidden;
+    transition: 0.5s;
+
+    #close-button {
+      font-size: 3em;
+      text-align: right;
+      padding-right: 15%;
+      margin: 24px 0 24px 0;
+    }
+  }
+
   .top-nav {
-    width: 100%;
+    width: 90%;
     height: 60px;
-    margin: 0;
-    ul {
-      height: 100%;
-      list-style-type: none;
-      padding: 0;
+    margin: 0 auto 0 auto;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    a {
+      font-size: 1.17em;
+      text-decoration: none;
+      color: $superwhite;
+      border: none;
       margin: 0;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      li {
-        padding: 8px 0 8px 0;
-      }
       
+      span {
+        text-transform: lowercase;
+        font-weight: 300;
+      }
+    }
+
+    i {
+      color: $superwhite;
+      font-size: 1.5em;
     }
 
   }
   .side-nav {
     display: none;
   }
-  background-color: $black;
+  
 }
 
 @media (min-width: 900px) {
@@ -66,7 +111,6 @@
       top: 0;
       left: 0;
       display: block;
-      text-align: center;
       border: none;
       img {
         border: $superwhite solid 4px;
@@ -76,15 +120,16 @@
         transition: border 350ms;
       }
       ul {
-        height: 100%;
-        list-style-type: none;
-        padding: 0;
-        margin: 0;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
         li {
-          padding: 10px 0 10px 0;
+          padding: 12px 0 12px 0;
+          p {
+            text-transform: lowercase;
+            font-size: 2.5em;
+            font-weight: 300;
+            padding: 0;
+            margin: 0;
+            color: $superwhite;
+          }
         }
       }
     }
