@@ -11,9 +11,6 @@ const contactInfo = `
     <div class="contact-entry">${city}</div>
 `;
 
-
-
-
 $(document).ready(function() {
   // populate contact info fields
   $("#contact-info").html(contactInfo);
@@ -36,6 +33,6 @@ $(document).ready(function() {
   var $sections = $('section');
   //console.log($sections);
 
-  // typing text at start screen, WIP
+  // typing text animation at intro, WIP
 })
 
